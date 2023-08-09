@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Wisdom Uchechukwu">
     <meta name="description" content="Contact Information for The Little Taco Shop">
-    <title>Contact Us - LTS</title>
+    <title>The Little Taco Shop - Contact</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -17,64 +17,38 @@
 
 <body>
     <!-- Header and navigation bar, to navigate the webpage -->
-    <header>
-        <h1>Contact US</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <h1 class="header-h1">Little Taco Shop</h1>
+        <nav class="header-nav">
+            <ul class="header-ul">
                 <li>
-                    <a href="/">Home</a>
+                    <a href=" /">Home</a>
                 </li>
                 <li>
-                    <a href="/#about">About <abbr title="Little Taco Shop">LTS</abbr></a>
+                    <a href="/#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="/#menu">Our Menu</a>
+                    <a href="/hours.html">Hours</a>
                 </li>
                 <li>
-                    <a href="/hours.html">Store Hours</a>
+                    <a href="/about.html">About</a>
                 </li>
             </ul>
         </nav>
-
-        <figure>
-            <img src="/assets/img/tacos_close_up_400x260.png" alt="Little Taco Shop Tacos" title="Tacos ready to eat!"
-                width="400" height="260">
-            <figcaption>Little Taco Shop Tacos</figcaption>
-        </figure>
     </header>
 
-    <hr>
+    <!-- Image-banner -->
+    <section class="hero">
+        <figure>
+            <img src="/assets/img/tacos_close_up_1000x649.png" alt="Little Taco Shop Tacos" title="Tacos ready to eat!"
+                width="1000" height="649">
+            <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
+        </figure>
+    </section>
 
-    <main>
-        <!-- Contact form -->
-        <section>
-            <h2>Our Contact Form</h2>
-
-            <form action="https://httpbin.org/get" method="get" target="_blank">
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="your name" required>
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="your name" required>
-                    </p>
-                    <p>
-                        <label for="message">Your Message:</label>
-                        <br>
-                        <textarea name="message" id="message" cols="30" rows="10"
-                            placeholder="Type your message here..."></textarea>
-                    </p>
-                </fieldset>
-                <button type="submit">Send</button>
-                <button type="reset">Reset</button>
-            </form>
-        </section>
-
+    <main class="main">
         <!-- Business location information -->
-        <section>
+        <article class="main-article">
             <h2>Our Location</h2>
             <address>
                 555 Taco Temptation Lane, Suite T<br>
@@ -85,14 +59,46 @@
             <p>
                 <a href="#">Back To Top</a>
             </p>
-        </section>
+        </article>
+
+        <!-- Contact form -->
+        <article class="main-article contact">
+            <h2 class="contact-h2">Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" target="_blank" class="contact-form">
+                <fieldset class="contact-fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact-p">
+                        <label class="contact-label" for="name">Name:</label>
+                        <input class="contact-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </p>
+                    <p class="contact-p">
+                        <label class="contact-label" for="email">Email:</label>
+                        <input class="contact-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </p>
+                    <p class="contact-p">
+                        <label class="contact-label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact-textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here..."></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact-button" type="submit">Send</button>
+                <button class="contact-button" type="reset">Reset</button>
+            </form>
+
+            <p class="menu-p">
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
     </main>
 
-    <hr>
-
-    <!-- footer copyright -->
-    <footer>
-        <p>Copyright &copy; The Little Taco Shop. </p>
+    <!-- footer - copyright -->
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Little Taco Shop.</span>
+        </p>
     </footer>
 </body>
 
